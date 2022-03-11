@@ -16,10 +16,9 @@ searchButton.addEventListener('click', () => {
 } )
 
 const displayData = (weather) => {
-    console.log(weather);
     const iconURL = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
     document.getElementById('temperature').innerText = weather.main.temp;
     document.getElementById('weather').innerText = weather.weather[0].main;
     document.getElementById('location').innerText = weather.name;
-    document.getElementById('image').setAttribute('src', iconURL) = weather.name;
+    document.getElementById('image').setAttribute('src', iconURL);
 }
